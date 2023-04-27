@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 180px;
+    background-color: cadetblue;
+    padding: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 81% 30%, 70% 50%, 28% 50%, 23% 30%, 9% 100%, 0 50%);
+}
+
+.header-left {
+    display: flex;
+    height: 35px;
+    width: 130px;
+    background-color: coral;
+}
+
+.header-center {
+    background-color: aqua;
+    height: 50px;
+    width: 130px;
+
+}
+
+.header-right {
+    height: 35px;
+    width: 130px;
+    background-color: cornflowerblue;
+}
+
+aside {
+    background-color: darkgoldenrod;
+}
+
+.close {
+    background-color: darkslateblue;
+}
+
+.home {
+    background-color: darkorange;
+}
+
+.pop-about-us {
+    background-color: forestgreen;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: fuchsia;
+}
+
+.left-content {
+    background-color: aliceblue;
+    justify-content: start;
+    
+}
+
+.right-content {
+    background-color: darkgree
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-bubble {
+    height: 300px;
+    background-color: pink;
+    clip-path: polygon(10% 25%, 40% 25%, 40% 60%, 10% 95%);
+}
+
+.right-bubble {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 300px;
+    background-color: bisque;
+    clip-path: polygon(20% 15%, 45% 0%, 45% 68%, 11% 68%);
+    clip-path: polygon(73% 49%, 94% 40%, 94% 80%, 60% 80%);
+}
