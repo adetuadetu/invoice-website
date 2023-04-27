@@ -10,6 +10,11 @@
     display: flex;
     flex-direction: column;
     background-color: aquamarine;
+    background-image: url("./img/good-faces-DSj40n6beGk-unsplash.jpg");
+    height: 950px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 header {
@@ -58,39 +63,34 @@ aside {
     background-color: forestgreen;
 }
 
-.content {
+section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: fuchsia;
+    /* background-color: fuchsia; */
 }
 
 .left-content {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     justify-content: start;
     
 }
 
 .right-content {
-    background-color: darkgree
+    /* background-color: aqua; */
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
 }
 
 .left-bubble {
+    width: 1000px;
     height: 300px;
     background-color: pink;
-    clip-path: polygon(10% 25%, 40% 25%, 40% 60%, 10% 95%);
+    clip-path: polygon(10% 25%, 40% 25%, 35% 60%, 10% 95%);
 }
 
 .right-bubble {
-    display: flex;
-    align-items: end;
-    justify-content: end;
+    width: 1000px;
     height: 300px;
     background-color: bisque;
-    clip-path: polygon(20% 15%, 45% 0%, 45% 68%, 11% 68%);
-    clip-path: polygon(73% 49%, 94% 40%, 94% 80%, 60% 80%);
+    clip-path: polygon(73% 39%, 94% 20%, 94% 80%, 60% 80%);
 }
