@@ -9,11 +9,13 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="header-left">Burger menu</div>
-            <div class="header-center">it works</div>
-            <div class="header-right">sign up</div>
-        </header>
+        <div class="parent" >
+            <header>
+                <div class="header-left">Burger menu</div>
+                <div class="header-center">it works</div>
+                <div class="header-right">sign up</div>
+            </header>
+        </div>    
         <aside class="pop-menu">
             <div class="close"></div>
             <div class="home"></div>
@@ -27,6 +29,28 @@
             <div class="right-content">
                 <div class="right-bubble"></div>
             </div>
+
+                <!-- Parent svg to right bubble -->
+            <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 40 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                    </filter>
+                </defs>
+            </svg>
+
+            <!-- Parent svg to header -->
+            <svg style="visibility: hidden;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="goo2"><feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 40 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                    </filter>
+                </defs>
+            </svg>
+
+
         </section>
     </div>
 </body>
