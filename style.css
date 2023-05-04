@@ -6,6 +6,24 @@
     font-family: lato, sans-serif;
 }
 
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#b5a189, #d9d5d2);
+    background-size: 190vh;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-position: 50% 30%;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -45,6 +63,13 @@ header {
     /* background-color: coral; */
 }
 
+.header-left {
+    display: flex;
+    justify-content: start;
+    height: 50px;
+    width: 160px;
+}
+
 .header-center {
     /* background-color: aqua; */
     display: flex;
@@ -64,8 +89,8 @@ header {
     /* background-color: cornflowerblue; */
 }
 
-.pop-menu {
-    background-color: darkgoldenrod;
+#pop-menu {
+    /* background-color: darkgoldenrod; */
 }
 
 .close {
@@ -73,7 +98,7 @@ header {
 }
 
 .home {
-    background-color: darkorange;
+    /* background-color: darkorange; */
 }
 
 .pop-about-us {
@@ -138,25 +163,110 @@ section {
 
 
 /* ------------------ */
-/* Burger menu Hover */
+/*  Burger menu Hover */
 /* ------------------ */
 
 
-
+button {
+    border: none;
+    background-color: transparent;
+}
 
 .burger {
-    position: relative;
-    display: inline-block;
+    position: fixed;
+    display: block;
+    top: 1%;
+    left: 1%;
     width: 50px;
     height: 50px;
 }
 
 
-#pop-menu {
-    height: 600px;
-    width: 200px;
-    min-width: 200px;
-    background-color: black;
-    opacity: 1;
+.nav-container {
+    display: block;
+    position: fixed;
+    height: 1500px;
+    width: 400px;
 }
 
+nav {
+    display: block;
+    position: fixed;
+    margin-top: 10%;
+    filter: url("#goo");
+}
+.menu {
+    display: none;
+    position: fixed;
+    clip-path: polygon(0 0, 20% 0, 41% 13%, 66% 0, 100% 0, 76% 88%, 4% 100%);
+    width: 400px;
+    height: 300px;
+    font-size: 24px;
+}
+
+
+
+button:hover .menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    align-items: start;
+    background-color: #97C7AE;
+    min-width: 300px;
+    height: 500px;
+    z-index: 9999;
+}
+
+button:hover ~ section {
+    transition: none 4s;
+    display: none;
+    transition-duration: 3s;
+    transition-property: inherit;
+}
+
+button:hover ~ .header-center {
+    display: none;
+}
+
+
+/* ------------------ */
+/*    about us page   */
+/* ------------------ */
+
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    filter: url("#goo");
+}
+
+.image-left {
+    background: url(./img/erik-adair-KTDjoQz5AZ0-unsplash.jpg);
+    clip-path: polygon(0 0, 100% 0, 66% 83%, 4% 100%);
+    height: 390px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-right {
+    background-color: #97C7AE;
+    clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%);
+    height: 600px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* ------------------ */
+/*    sign up page    */
+/* ------------------ */
