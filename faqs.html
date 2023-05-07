@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>index</title>
+</head>
+<body>
+    <div class="container2">
+        <div class="parent" >
+            <header>
+                <div class="header-left"></div>
+                <div class="header-center">
+                    <a href="./index.html">
+                        it.works
+                    </a>
+                </div>
+                <div class="header-right">
+                    <a href="./signup.html">
+                        Sign up
+                    </a>
+                </div>
+            </header> 
+        </div>
+        <button class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <div class="nav-container">
+                <nav class="pop-menu">
+                    <div class="menu">
+                        <div class="about-us">
+                            <a href="./index.html">
+                                Home
+                            </a>
+                        </div>
+                        <div class="faqs">
+                            <a href="./faqs.html">
+                                FAQs
+                            </a>
+                        </div>
+                        <div class="settings">
+                            <a href="./settings.html">
+                                Settings
+                            </a>
+                        </div>
+                        <div class="sign-up">
+                            <a href="./signup.html">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>   
+        </button> 
+        <section class="content">
+
+            <div class="question-container">
+                <p class="questions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusamus laboriosam, aliquam recusandae eaque, velit fugiat quod reprehenderit consequuntur, dolorem optio ab quo obcaecati. Deleniti possimus molestias facere hic ex?</p>
+                <p class="questions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse temporibus asperiores harum vel totam ab voluptatibus aliquam odio. Recusandae dolore dolor doloribus! Nam officia repellendus molestias similique nulla delectus distinctio.</p>
+                <p class="questions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptas rerum a dolorum, vel modi? Reiciendis voluptatem, saepe tempora provident id, fugit facere nam corrupti ea ipsam, rem exercitationem! Esse.</p>
+                <p class="questions">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut culpa nisi est necessitatibus voluptatum numquam rerum placeat cum fuga officiis! Doloremque praesentium eveniet assumenda numquam provident ratione molestiae, sapiente dicta.</p>
+                <p class="questions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet modi doloremque assumenda iusto corrupti ut ratione aut cumque perferendis, totam suscipit fugiat illo fuga nihil qui explicabo voluptate neque.</p>
+                <p class="questions">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, minus voluptatum distinctio, adipisci perspiciatis sapiente eum at deleniti eveniet error nam provident! Beatae vel dolor nesciunt at quaerat! Eum, doloribus!</p>
+            </div>
+
+                <!-- Parent svg to right and left bubble -->
+            <svg  width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 40 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                    </filter>
+                </defs>
+            </svg>
+
+            <!-- Parent svg to header -->
+            <svg  width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="goo2"><feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 40 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                    </filter>
+                </defs>
+            </svg>
+
+        </section>
+    </div>
+</body>
+</html>

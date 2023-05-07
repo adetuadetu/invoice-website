@@ -268,5 +268,25 @@ button:hover ~ .header-center {
 
 
 /* ------------------ */
-/*    sign up page    */
+/*      F.A.Q's       */
 /* ------------------ */
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.questions {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #97C7AE;
+    height: 10vh;
+    width: 80vw;
+    margin-top: 2vh;
+    border-radius: 15px;
+    border: 0.5px solid;
+}
